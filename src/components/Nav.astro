@@ -1,0 +1,39 @@
+<nav>
+  <a class="link" href="/">
+    <div class="">
+      <img class="rounded" src="/lukas-tr-profile-picture.png" />
+    </div>
+  </a>
+  <a class="link" href="/projects/">Projects</a>
+</nav>
+
+<style>
+  nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .link {
+    color: var(--text-color);
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    transition: color ease 0.3s;
+  }
+
+  .link:hover,
+  .link:focus {
+    color: var(--primary-color);
+  }
+
+  .rounded {
+    display: block;
+    width: 2em;
+    height: 2em;
+    margin-right: 0.5rem;
+  }
+</style>

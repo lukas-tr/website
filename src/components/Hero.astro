@@ -1,0 +1,77 @@
+---
+import Social from "./Social.astro";
+---
+
+<div class="hero">
+  <div class="card">
+    <div class="card-avatar">
+      <img class="rounded" src="/lukas-tr-profile-picture.png" />
+    </div>
+    <h1 class="card-title">Lukas Troyer</h1>
+    <div class="card-text">
+      I am currently attending JKU in Austria. I have been using many different
+      technologies and I love exploring even more new ones. When I'm not inside
+      my IDE or text editor, I like to play video games, watch movies or go
+      jogging.
+    </div>
+    <div class="card-actions">
+      <Social />
+    </div>
+  </div>
+</div>
+
+<style>
+  .card {
+    margin: 10px;
+    padding: 40px;
+    padding-top: calc(50px + 40px);
+    max-width: 100%;
+  }
+
+  .card-title {
+    font-size: 2em;
+  }
+
+  .card-text {
+    font-size: 1em;
+  }
+
+  .card-actions {
+    font-size: 2em;
+    padding-top: 40px;
+  }
+
+  @media (min-width: 750px) {
+    .card {
+      max-width: 50%;
+    }
+
+    .card-title {
+      font-size: 3em;
+    }
+
+    .card-text {
+      font-size: 1.5em;
+    }
+  }
+
+  .card-avatar {
+    outline: 4px solid var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+  }
+
+  .hero {
+    position: relative;
+    overflow: hidden;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>

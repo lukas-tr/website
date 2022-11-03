@@ -1,0 +1,8 @@
+@import url(../../node_modules/firacode/distr/fira_code.css);
+
+/* Specify in CSS */
+body { font-family: 'Fira Code', monospace; }
+
+@supports (font-variation-settings: normal) {
+  body { font-family: 'Fira Code VF', monospace; }
+}
